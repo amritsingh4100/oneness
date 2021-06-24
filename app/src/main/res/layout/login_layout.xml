@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/otp_login_whole_id"
+    android:background="@drawable/main_theme_background"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/cancel_login_id"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_gravity="left|start"
+        android:layout_margin="18dp"
+        android:background="@drawable/header_cross" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_image">
+
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="27dp"
+                android:id="@+id/otp_request_holder_layout_id">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/login_email_edit_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:padding="4dp"
+                            android:textSize="12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginBottom="5dp"
+                        app:passwordToggleEnabled="false">
+
+                        <EditText
+                            android:id="@+id/login_password_edit_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="4dp"
+                            android:textSize="12sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/login_bt_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/otp_request_holder_layout_id"
+                android:layout_alignBottom="@+id/otp_request_holder_layout_id"
+                android:layout_marginRight="-34dp"
+                android:layout_marginBottom="-34dp"
+                android:paddingTop="18dp"
+                app:cardBackgroundColor="#00A5FF">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/play_arrow_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="11dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a member yet? "
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register here"
+                android:textColor="@color/profile_setup_card_color"
+                android:textSize="12sp"
+                android:id="@+id/login_register_txt_id"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+

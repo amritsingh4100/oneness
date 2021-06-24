@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="9dp"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="54dp"
+        android:layout_height="54dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/comment_inflator_thumbnail_id"
+            android:src="@drawable/round_corners_background_blue"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jake Litteton"
+                android:id="@+id/comment_inflator_username_id"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/rightSideView"
+                android:layout_toStartOf="@+id/rightSideView"
+                android:layout_alignParentLeft="true"/>
+
+            <LinearLayout
+                android:id="@+id/rightSideView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 HOURS"
+                    android:layout_margin="5dp"
+                    android:id="@+id/comment_inflator_time_ago"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_grey_color"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comments_tagger_flexlayout_id"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexWrap="wrap">
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/black"
+            android:id="@+id/comment_inflator_content_id"
+            android:textColorLink="@color/link_color"
+            android:autoLink="web"
+            android:text="Love the place"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

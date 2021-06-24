@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Oneness</string>
+    <string name="bio_edit_hint">Say something about yourself that may be relevant to the Oneness community.</string>
+    <string name="oneness_is">Oneness is an invite only
+community. If you are not already invited, please carefully read about it
+and then request for an invite if you feel a connect with the aspiration and
+purpose of the community.</string>
+    <string name="nameHint">Name <font color='red'>*</font></string>
+</resources>

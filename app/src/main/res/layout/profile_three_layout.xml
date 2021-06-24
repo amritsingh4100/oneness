@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_theme_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/about_image">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="35dp"
+                        android:paddingRight="35dp"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="30dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/profile_three_about"
+                            android:textSize="16sp"
+                            android:imeOptions="actionDone"
+                            android:background="@null"
+                            android:hint="@string/bio_edit_hint"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Minimum 100 words"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:layout_gravity="end"/>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029248455944",
+    "project_id": "oneness2021-393a5",
+    "storage_bucket": "oneness2021-393a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029248455944:android:90686ab7fa599c186cc8bd",
+        "android_client_info": {
+          "package_name": "com.amrit.oneness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029248455944-jktpsreeodr7oap2lqaglm13tmqqr87q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeCCDiGnjW6W9bMwbrJ3QN9lD9DcIJ5mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029248455944-jktpsreeodr7oap2lqaglm13tmqqr87q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

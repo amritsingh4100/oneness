@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_upper_whole_id"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:id="@+id/post_comments_thumbnail_id"
+                    android:background="@drawable/sample_image"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Just now"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/post_comment_timeago_id"
+                        android:textColor="@color/text_grey_color"
+                        android:textSize="15sp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_grey_color"
+                        android:id="@+id/post_report"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="4dp"
+                        android:textSize="12sp"
+                        android:text="Report"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kshitij Mehra"
+                    android:id="@+id/post_comment_username_id"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:id="@+id/post_comment_main_upper_image" />
+
+
+        -<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:id="@+id/post_comment_title_id"
+            android:text="Lorem ispum dolor sit amet , consector adispiec ng elit. read more..."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="9dp"
+            android:autoLink="web"
+            android:id="@+id/post_comment_details_id"
+            android:textColorLink="@color/link_color"
+            android:text="Lorem ispum dolor sit amet , consector adispiec ng elit. read more..."/>
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_comment_flexlayout_id"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexWrap="wrap">
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/response_count_holder_id">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R E S P O N S E S"
+                android:textColor="@color/response_text_color"
+                android:id="@+id/txt_response"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:id="@+id/post_comments_responses_count_id"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="125sp"
+                android:alpha="0.1"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

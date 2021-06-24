@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#E4D240</color>
+    //color primary was 3F51B5
+    <color name="colorPrimaryDark">#303F9F</color>
+    //color primary dark was #303F9F
+    <color name="colorAccent">#000</color>
+    <color name="profile_setup_bt_color">#E4D240</color>
+    <color name="profile_setup_card_color">#00AFFE</color>
+    <color name="indicator_fill">#EBDA43</color>
+    <color name="background_grey">#C6C6C4</color>
+    <color name="text_color_blue">#0088FD</color>
+    <color name="text_grey_color">#B7B7B7</color>
+    <color name="response_text_color">#767070</color>
+    <color name="selected_grey_color">#EBEBEB</color>
+    <color name="link_color">#EBDA43</color>
+    <color name="notification_bar_color">#c1b120</color>
+</resources>

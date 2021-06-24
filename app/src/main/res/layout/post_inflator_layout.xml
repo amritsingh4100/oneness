@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/post_holder_item_click_id">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical"
+        android:id="@+id/main_layout_clicker_id"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="55dp">
+
+                <TextView
+                    android:id="@+id/post_title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:autoLink="web"
+                    android:textStyle="bold"
+                    android:textColorLink="@color/link_color"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:text="some post text here lorem i"
+                    android:textSize="14sp">
+
+                </TextView>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_flexlayout_id"
+                    android:layout_marginTop="9dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:alignContent="flex_start"
+                    app:alignItems="flex_start"
+                    app:flexWrap="wrap">
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <TextView
+                    android:id="@+id/post_details_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:autoLink="web"
+                    android:textColorLink="@color/link_color"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:text="some post text here lorem ispum jhhsbdysbdsjndsybdysdbsydbsydbsydbsydbsydsydsydbsydsydbsydbshbdahdbyudfgsdfgytfgwefgeuyfgdyufgbdufgsdfgyudsgfdgfyusdgfyusdfyusgdfydgfyudfg"
+                    android:textSize="12sp">
+
+                </TextView>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="9dp"
+                    android:alpha="0.5"
+                    android:background="@color/background_grey"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="9dp">
+
+
+        <ImageView
+            android:id="@+id/post_user_thumbnail_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/round_corners_background_blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/rightSideView"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/post_time_ago_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_grey_color"
+                    android:textSize="12sp"
+                    android:text="5 hours ago" />
+
+                <TextView
+                    android:id="@+id/post_user_name_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:text="Aman Gupta" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:id="@+id/rightSideView"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/post_response_count_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:alpha="0.25"
+                    android:textColor="@color/text_grey_color"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:text="23" />
+
+
+                <TextView
+                    android:id="@+id/comment_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.35"
+                    android:text="RESPONSES" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

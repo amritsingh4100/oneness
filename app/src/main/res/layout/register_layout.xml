@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/otp_login_whole_id"
+    android:background="@drawable/main_theme_background"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="left|start"
+        android:layout_margin="18dp"
+        android:id="@+id/register_back_id"
+        android:background="@drawable/back_arrow_icon"/>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <ImageView
+        android:layout_width="246dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/register_image">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/inform_user_otp"
+        android:visibility="gone"
+        android:text="Please enter OTP sent to your Email id for verification"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="27dp"
+                android:id="@+id/otp_request_holder_layout_id">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/register_email_edit_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:hint="New Email"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textSize="12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/register_password_edit_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:hint="New Password"
+                            android:inputType="textPassword"
+                            android:padding="4dp"
+                            android:textSize="12sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/register_register_bt_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/otp_request_holder_layout_id"
+                android:layout_alignBottom="@+id/otp_request_holder_layout_id"
+                android:layout_marginRight="-34dp"
+                android:layout_marginBottom="-34dp"
+                android:onClick="loginOnClick"
+                android:paddingTop="18dp"
+                app:cardBackgroundColor="#00A5FF">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/play_arrow_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    </LinearLayout>
+

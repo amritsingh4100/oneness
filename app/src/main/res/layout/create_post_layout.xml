@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@drawable/yellow_gradient_background">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_margin="18dp"
+            android:src="@drawable/clear_icon"
+            android:id="@+id/create_post_cancel"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/compose_post_whole_id"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textColor="@color/white"
+                    android:text="Post"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Give title..."
+                        android:maxLines="4"
+                        android:textSize="14sp"
+                        android:inputType="textCapSentences"
+                        android:maxLength="60"
+                        android:id="@+id/create_post_title_edit_id"
+                        android:paddingTop="22dp"
+                        android:paddingBottom="22dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/create_post_details_id"
+                        android:maxLines="4"
+                        android:textSize="14sp"
+                        android:inputType="textCapSentences"
+                        android:maxLength="1000"
+                        android:hint="Write something..."
+                        android:paddingTop="22dp"
+                        android:paddingBottom="22dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_post_flexbox_id"
+                    app:alignContent="flex_start"
+                    app:alignItems="flex_start"
+                    app:flexWrap="wrap">
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:visibility="gone"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:background="@drawable/blue_gradient_background"
+                    android:id="@+id/create_post_show_image">
+
+                </ImageView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/create_post_add_a_photo_id"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/camera_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:text="Add a photo"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/black_border_background"
+                    android:layout_marginBottom="22dp"
+                    android:id="@+id/image_holder_layout">
+
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/clear_icon"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/cancel_image"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="9dp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="P O S T"
+            android:id="@+id/create_post_post_bt_id"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_gradient_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/create_post_hide_id">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading"
+            android:textSize="28sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
